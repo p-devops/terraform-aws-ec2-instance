@@ -32,3 +32,7 @@ variable "description" {
   description = "So meta"
   default     = "Foo"
 }
+
+variable "key_pair" {
+    description = "Key pair used to login to the instance"
+}
