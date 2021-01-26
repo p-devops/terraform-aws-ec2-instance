@@ -5,12 +5,12 @@ variable "aws_region" {
 
 variable "ami_id" {
   description = "ID of the AMI to provision. Default is Ubuntu 14.04 Base Image"
-  default     = "ami-2e1ef954"
+  default     = "ami-0be2609ba883822ec"
 }
 
 variable "instance_type" {
   description = "type of EC2 instance to provision."
-  default     = "t2.small"
+  default     = "t2.micro"
 }
 
 variable "name" {
@@ -20,7 +20,7 @@ variable "name" {
 
 variable "owner" {
   description = "Name to pass to the Owner tag"
-  default     = "Pizza-Pizza"
+  default     = "test_user"
 }
 
 variable "ttl" {
