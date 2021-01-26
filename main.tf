@@ -6,11 +6,11 @@ provider "aws" {
   region = "${var.aws_region}"
 }
 
-resource "aws_instance" "ubuntu" {
+resource "aws_instance" "ec2-instance" {
   ami               = "${var.ami_id}"
   instance_type     = "${var.instance_type}"
   availability_zone = "${var.aws_region}a"
-  key_name = var.key_pair
+  key_name = "${var.key_pair}"
 
   tags = {
     Name        = "${var.name}"
